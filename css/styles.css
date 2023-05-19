@@ -62,6 +62,7 @@ h2, legend {
     font-size: 1.1rem;
     color: darkslategray;
     font-weight: 900;
+    padding-bottom: 0.6em;
 }
 
 legend {
@@ -73,6 +74,10 @@ p, label {
     color: lightslategray;
     letter-spacing: .02em;
     font-size: 0.9rem;
+}
+
+p {
+    margin-top: 0px;
 }
 
 /* Form styling */
@@ -119,10 +124,25 @@ select {
     color: #8a97a0;
 }
 
+input[type="text"]+label,
+input[type="tel"]+label,
+input[type="email"]+label,
+select+label {
+    margin-top: 1.5em;
+}
+
 input[type="radio"],
 input[type="checkbox"] {
   display: inline-block;
 }
+
+textarea {
+    height: 150px;
+}
+
+/* .newsletter-question:last-child {
+    color: red;
+} */
 
 /* footer {
     padding-top: 0px;
@@ -148,9 +168,20 @@ button {
 fieldset {
     border: none;
     padding: 0px;
+    margin: 0px;
+}
+
+/* Rounded corners on fields and button */
+button, input, textarea, select {
+    border-radius: 5px;
 }
 
 
+.radio-item, .checkbox-item {
+    display: flex;
+    align-items:center;
+    gap:10px;
+}
 
 /* Attribute selectors */
 input[value] {
@@ -159,5 +190,20 @@ input[value] {
     font-weight: 300;
     font-style: italic;
     text-align: right;
+}
+
+.contact-info input:last-child {
+    margin-bottom: 1.5em;
+}
+
+.newsletter-receive div:last-child, .newsletter-format div:last-child {
+    margin-bottom: 10px;
+}
+
+
+/* Media query for desktop */
+
+@media (min-width: 768px) {
+    
 }
 
