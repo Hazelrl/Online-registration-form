@@ -34,7 +34,7 @@ section {
     margin: 1em;
 }
 
-/* Divider styling */
+/* Divider styling NB The space between actually controlled by form */
 section {
     border-bottom: 4px solid darkslategray;
     padding-bottom: 1.3em;
@@ -44,7 +44,6 @@ section {
 legend {
     border-top: 2px solid darkslategray;
     width: 100%;
-    /* margin-top: 0.2em; */
 }
 
 
@@ -69,6 +68,10 @@ legend {
     padding-top: 1.2em;
 }
 
+/* Form heading styling */
+form h1, form h2 {
+    text-align: left;
+}
 
 p, label {
     color: lightslategray;
@@ -95,16 +98,13 @@ form select {
 
 
 
-/* Form heading styling */
-form h1, form h2 {
-    text-align: left;
-}
+
 
 form {
     /* max-width: 300px;
     margin: 10px auto; */
     padding: 0 0 10px;
-    margin-top: 0.14em;
+    margin-top: 2px;
     background: #fff;
     /* border-radius: 8px; */
   }
@@ -179,8 +179,8 @@ button, input, textarea, select {
 
 .radio-item, .checkbox-item {
     display: flex;
-    align-items:center;
-    gap:10px;
+    align-items: center;
+    gap: 10px;
 }
 
 /* Attribute selectors */
@@ -193,6 +193,7 @@ input[value] {
 }
 
 .contact-info input:last-child {
+    width: 55%;
     margin-bottom: 1.5em;
 }
 
@@ -204,6 +205,78 @@ input[value] {
 /* Media query for desktop */
 
 @media (min-width: 768px) {
-    
+    section, form {
+        width: 60%;
+        margin: auto;
+    }
+
+    /* Divider styling
+    section {
+        border-bottom: 4px solid darkslategray;
+        padding-bottom: 2em;
+        margin-bottom: 0;
+    }
+
+    legend {
+        border-top: 2px solid darkslategray;
+        width: 100%;
+    } */
+
+    p {
+        font-size: 0.75rem;
+    }
+
+    form {
+        margin-top: 1.25px;
+    }
+
+    .contact-info {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: baseline;
+    }
+
+    .newsletter {
+        align-items: baseline;
+    }
+
+    label {
+        flex-basis: 25%;
+        text-align: left;
+        font-size: 0.7rem;
+    }
+
+    .contact-info input, textarea, select {
+        flex-basis: 75%;
+        text-align: right;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+        margin: 2em 0 0;
+        padding-bottom: 0.2em;
+    }
+
+    select {
+        font-size: 0.8rem;
+    }
+
+    button {
+        margin-bottom: 1.5em;
+    }
+
+    textarea {
+        height: 100px;
+        margin-bottom: 20px;
+    }
+
+    .contact-info input:last-child {
+        flex-basis: 30%;
+        margin-bottom: 2.25em;
+    }
+
+    #other-topics {
+        margin-bottom: 20px;
+    }
 }
 
