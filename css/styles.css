@@ -142,7 +142,7 @@ fieldset {
     margin-bottom: 1.5em;
 }
 
-.newsletter-receive div:last-child, .newsletter-format div:last-child {
+.newsletter-receive div:last-child {
     margin-bottom: 10px;
 }
 
@@ -157,7 +157,6 @@ button {
     cursor: pointer;
     font-size: 1rem;
     font-weight: 700;
-    font-style: bold;
     color: #fff;
     background-color: rgb(52, 177, 164);
     padding: 1em;
