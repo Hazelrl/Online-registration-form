@@ -137,19 +137,23 @@ fieldset {
     margin: 0px;
 }
 
+ul {
+    padding-left: 0px;
+}
+
 .contact-info input:last-child {
-    width: 55%;
+    width: 50%; /* setting zip code box width */
     margin-bottom: 1.5em;
 }
 
-.newsletter-receive div:last-child {
+.newsletter-receive ul:last-child {
     margin-bottom: 10px;
 }
 
 textarea:focus, input:focus, select:focus {
     background: rgb(197, 217, 224);
     transition: all 0.2s ease;
-  }
+}
 
 /* button styling */
 
@@ -194,11 +198,12 @@ button, input, textarea, select {
 @media (min-width: 768px) {
     section, form {
         width: 60%;
+        max-width: 700px;
         margin: auto;
     }
 
     h1, h2 {
-        font-size: 1.1rem;
+        font-size: 1.3rem;
     }
 
     h2 {
@@ -207,7 +212,7 @@ button, input, textarea, select {
     }
 
     p {
-        font-size: 0.75rem;
+        font-size: 1rem;
     }
 
     form {
@@ -217,15 +222,15 @@ button, input, textarea, select {
     label {
         flex-basis: 25%;
         text-align: left;
-        font-size: 0.7rem;
+        font-size: 0.9rem;
     }
 
     legend {
-        font-size: 1rem;
+        font-size: 1.3rem;
     }
 
     select {
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
 
     textarea {
@@ -235,6 +240,10 @@ button, input, textarea, select {
 
     button {
         margin-bottom: 1.5em;
+    }
+
+    input[placeholder] {
+        font-size: 0.9rem;
     }
 
     .contact-info {
@@ -249,7 +258,7 @@ button, input, textarea, select {
     }
 
     .contact-info input:last-child {
-        flex-basis: 30%;
+        flex-basis: 25%; /* setting zip code box width */
         margin-bottom: 2.25em;
     }
 
